@@ -1,4 +1,4 @@
-Show HN: Saafree OS — We built an Operating System for
+Saafree OS — We built an Operating System for
 organizations in the AI Agent era
 
 ======================================================
