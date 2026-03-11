@@ -52,24 +52,10 @@ harness. No cart. No route map. You just pile the goods
 onto the horse's back and tell it to go.
 
   WITHOUT SAAFREE OS (current enterprise AI)
-  +-----------------------------------------------+
-  |                                               |
-  |  GOODS      => placed directly on horse back  |
-  |  (tasks)    => no saddle                      |
-  |             => no harness                     |
-  |             => no cart                        |
-  |             => no route map                   |
-  |             => no log of journey              |
-  |                                               |
-  |  HORSE      => runs                           |
-  |  (AI Agent)                                   |
-  |                                               |
-  |  OUTCOME    => goods shift and fall           |
-  |             => cannot steer                   |
-  |             => cannot stop cleanly            |
-  |             => cannot audit what happened     |
-  |                                               |
-  +-----------------------------------------------+
+  ----------------------------------------
+  GOODS (tasks)   : placed directly on horse back; no saddle, no harness, no cart, no route map, no log of journey.
+  HORSE (AI Agent): runs.
+  OUTCOME         : goods shift and fall; cannot steer; cannot stop cleanly; cannot audit what happened.
 
 The horse might move in roughly the right direction. It
 might even arrive somewhere useful. But the goods shift
@@ -82,33 +68,13 @@ structure to record it.
 This is how every enterprise is deploying AI Agents today.
 
   WITH SAAFREE OS
-  +-----------------------------------------------+
-  |                                               |
-  |  ORGANIZATION  => sits in cart                |
-  |  (rider)       => holds reins                 |
-  |                => follows route map           |
-  |                => every leg of journey logged |
-  |                                               |
-  |  CART          => BEU (Business Exec Unit)    |
-  |                => bounded execution container |
-  |                => defined destination         |
-  |                                               |
-  |  HARNESS       => OS runtime control          |
-  |  + REINS       => can stop, redirect, replace |
-  |                => agent at any moment         |
-  |                                               |
-  |  ROUTE MAP     => constitutional layer        |
-  |                => defines permitted paths     |
-  |                => before departure            |
-  |                                               |
-  |  HORSE         => runs as fast as it wants    |
-  |  (AI Agent)    => within structure            |
-  |                                               |
-  |  OUTCOME       => goods arrive                |
-  |                => journey fully auditable     |
-  |                => rider made every decision   |
-  |                                               |
-  +-----------------------------------------------+
+  ---------------
+  ORGANIZATION (rider): sits in cart; holds reins; follows route map; every leg of journey logged.
+  CART                : BEU (Business Exec Unit); bounded execution container; defined destination.
+  HARNESS + REINS     : OS runtime control; can stop, redirect, replace agent at any moment.
+  ROUTE MAP           : constitutional layer; defines permitted paths before departure.
+  HORSE (AI Agent)    : runs as fast as it wants, within structure.
+  OUTCOME             : goods arrive; journey fully auditable; rider made every decision.
 
 The horse provides the power.
 The rider makes every decision.
@@ -138,20 +104,9 @@ answered by a better model. It requires a different layer
 entirely — one that sits above the agent, not inside it.
 
   MARKET LANDSCAPE TODAY
-  +-----------------------------------------------+
-  |                                               |
-  |  AI Platforms      => capability              |
-  |  Agent Frameworks  => orchestration           |
-  |  Workflow Tools    => automation              |
-  |  Model Safety      => alignment (model-level) |
-  |                                               |
-  |  MISSING           => Operating System        |
-  |                       runtime enforcement     |
-  |                       execution boundaries    |
-  |                       constitutional layer    |
-  |                       organizational agency   |
-  |                                               |
-  +-----------------------------------------------+
+  ----------------------
+  AI Platforms, Agent Frameworks, Workflow Tools, Model Safety (capability, orchestration, automation, alignment at model-level).
+  MISSING: Operating System — runtime enforcement, execution boundaries, constitutional layer, organizational agency.
 
 The market has platforms. It has orchestration tools. It
 has agent frameworks. What it does not have is an Operating
@@ -210,45 +165,11 @@ policy. It is a structural constraint.
 
 
   FOUR-PLANE ARCHITECTURE
-  =====================================================
-  PLANE 1 — GOVERNANCE
-  +---------------------------------------------+
-  |  Constitutional Layer                       |
-  |  * defines what is permitted                |
-  |  * enforced before any execution            |
-  |  * cannot be bypassed by agent or workflow  |
-  +---------------------------------------------+
-                      |
-                      v
-  PLANE 2 — STRATEGY
-  +---------------------------------------------+
-  |  Strategic Decision Brain (SDB)             |
-  |  * receives organizational intent           |
-  |  * forms strategy                           |
-  |  * selects execution plan                   |
-  |  * records decision with full lineage       |
-  +---------------------------------------------+
-                      |
-                      v
-  PLANE 3 — EXECUTION
-  +---------------------------------------------+
-  |  Execution Fabric + BEU Runtime             |
-  |  * AI Agents exist only inside BEUs         |
-  |  * OS controls: start / stop / replace      |
-  |  * every action logged to execution memory  |
-  |  * result returned to strategy layer        |
-  +---------------------------------------------+
-                      |
-                      v
-  PLANE 4 — EVOLUTION
-  +---------------------------------------------+
-  |  CEP — Capability Evolution Pipeline        |
-  |  * evaluates outcomes against intent        |
-  |  * extracts strategic patterns              |
-  |  * upgrades capability versions             |
-  |  * feeds improved policy back to strategy   |
-  +---------------------------------------------+
-  =====================================================
+  -----------------------
+  [1] GOVERNANCE  : Constitutional Layer — defines what is permitted; enforced before any execution; cannot be bypassed.
+  [2] STRATEGY    : Strategic Decision Brain (SDB) — receives intent; forms strategy; selects plan; records decision with full lineage.
+  [3] EXECUTION   : Execution Fabric + BEU Runtime — agents only inside BEUs; OS controls start/stop/replace; every action logged.
+  [4] EVOLUTION   : CEP — evaluates outcomes; extracts patterns; upgrades capability; feeds policy back to strategy.
 
 
 ------------------------------------------------------
@@ -259,34 +180,10 @@ The most important architectural decision we made was
 inverting the relationship between governance and system.
 
   TRADITIONAL (governance as afterthought)
-  +-------------------------------------------+
-  |  Build system                             |
-  |       |                                   |
-  |       v                                   |
-  |  Add compliance layer                     |
-  |       |                                   |
-  |       v                                   |
-  |  Add audit trail                          |
-  |       |                                   |
-  |       v                                   |
-  |  Incident happens => patch => repeat      |
-  +-------------------------------------------+
+  Build system -> Add compliance -> Add audit trail -> Incident -> patch -> repeat.
 
   SAAFREE (governance as foundation)
-  +-------------------------------------------+
-  |  Constitutional layer defined first       |
-  |       |                                   |
-  |       v                                   |
-  |  Execution fabric built on top            |
-  |       |                                   |
-  |       v                                   |
-  |  Agent cannot violate constitution        |
-  |  not by policy — by structure             |
-  |       |                                   |
-  |       v                                   |
-  |  No attack surface to exploit             |
-  |  No gap to find                           |
-  +-------------------------------------------+
+  Constitutional layer first -> Execution fabric on top -> Agent cannot violate (by structure, not policy) -> No attack surface, no gap to find.
 
 This is the same lesson from my penetration testing years.
 Organizations with genuinely secure systems didn't have
@@ -304,38 +201,10 @@ Secure by design. Governed by design. Ungameable by design.
 Saafree OS does not just govern. It learns. Every
 execution cycle feeds back into organizational capability.
 
-        ORGANIZATIONAL INTENT
-                |
-                v
-           +----------+
-           | STRATEGY | <-- capability versions
-           +----+-----+     pattern memory
-                |           policy updates
-                v
-           +----------+
-           |EXECUTION | AI Agents run inside BEUs
-           +----+-----+ OS controls runtime
-                |
-                v
-           +----------+
-           |  OUTCOME | result recorded
-           +----+-----+ audit trail complete
-                |
-                v
-           +----------+
-           |EVOLUTION | CEP evaluates outcome
-           +----+-----+ capability upgraded
-                |
-                +-------------------> back to STRATEGY
+  Loop: ORGANIZATIONAL INTENT -> STRATEGY (gets capability versions, pattern memory, policy updates) -> EXECUTION (AI Agents in BEUs, OS controls runtime) -> OUTCOME (recorded, audit complete) -> EVOLUTION (CEP evaluates, capability upgraded) -> back to STRATEGY.
 
-  Traditional enterprise:
-  data -> dashboards -> human decisions
-  (slow, periodic, no memory)
-
-  Saafree enterprise:
-  intent -> strategy -> execution -> outcome -> evolution
-  -> improved strategy
-  (continuous, governed, auditable, self-improving)
+  Traditional: data -> dashboards -> human decisions (slow, periodic, no memory).
+  Saafree:     intent -> strategy -> execution -> outcome -> evolution -> improved strategy (continuous, governed, auditable, self-improving).
 
 
 ------------------------------------------------------
@@ -373,13 +242,7 @@ What that system did in production:
     transaction processing
 
   PLATFORM COVERAGE (battle-tested, not mockups)
-  +---------------------------------------------+
-  | E-commerce  : Shopee, Lazada, Amazon, ...   |
-  | Social      : Facebook, YouTube, TikTok, .. |
-  | Messaging   : Zalo, Telegram, WhatsApp, ..  |
-  | CRM/Sales   : Salesforce, ...               |
-  | + 20 others across categories               |
-  +---------------------------------------------+
+  E-commerce: Shopee, Lazada, Amazon, ... | Social: Facebook, YouTube, TikTok, ... | Messaging: Zalo, Telegram, WhatsApp, ... | CRM/Sales: Salesforce, ... | + 20 others.
 
 Connecting this many heterogeneous platforms —
 each with different APIs, auth flows, rate limits,
@@ -402,19 +265,7 @@ With no harness.
 So we built the OS.
 
   BREAKDOWN OF ~3M LINES
-  +---------------------------------------------+
-  | Battle-tested platform integrations (28x)   |
-  | Multi-role AI Agent coordination layer      |
-  | Business automation workflows (real ops)    |
-  | ---                                         |
-  | Saafree OS kernel (~500K lines estimated)   |
-  |   Constitutional governance plane           |
-  |   Strategic Decision Brain                  |
-  |   Execution Fabric + BEU runtime            |
-  |   CEP Evolution Pipeline                    |
-  |   Strategic Memory Layer                    |
-  |   Simulation Engine                         |
-  +---------------------------------------------+
+  Platform integrations (28x); multi-role AI coordination; business automation workflows. Saafree OS kernel (~500K): Constitutional governance, SDB, Execution Fabric + BEU, CEP, Strategic Memory, Simulation Engine.
 
 The 28-platform automation layer is now being
 converted into BEUs — the native execution unit
@@ -457,17 +308,8 @@ Three things are converging:
   WHAT WE ARE NOT
 ------------------------------------------------------
 
-  We are NOT:                  We ARE:
-  -------------------------    -------------------------
-  An AI platform               An Operating System
-  A better agent               for organizations
-  An automation tool
-  A workflow orchestrator      Structural constraint
-  A monitoring layer           at runtime —
-  A guardrail system           not oversight,
-  An orchestration layer       not monitoring,
-                               not policy.
-                               Kernel-level governance.
+  We are NOT: An AI platform; a better agent; an automation tool; a workflow orchestrator; a monitoring layer; a guardrail system; an orchestration layer.
+  We ARE: An Operating System for organizations. Structural constraint at runtime — not oversight, not monitoring, not policy. Kernel-level governance.
 
 
 ------------------------------------------------------
