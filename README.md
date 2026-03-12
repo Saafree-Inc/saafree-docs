@@ -12,6 +12,7 @@ This repository contains the **open** documentation published by Saafree:
 
 - **`00-doctrine/`** — Constitutional doctrine (Articles 0–8), positioning papers, execution doctrine, regulatory materials, and **EEOS category** (whitepaper + architecture).
 - **`01-layers/`** — Technical constitution and layer laws (function, logic, physic, security).
+- **`launch/`** — Draft launch articles (e.g. for Hacker News).
 
 The full Saafree OS codebase remains in a private repository.
 
