@@ -97,6 +97,6 @@ The intellectual architecture is public, verifiable, and versioned.
 
 ## Contact
 
-Saafree Inc. — Ho Chi Minh City, Vietnam  
+Saafree Inc.  
 → [saafree.com](https://saafree.com)  
 → [github.com/Saafree-Inc/saafree-docs](https://github.com/Saafree-Inc/saafree-docs)
