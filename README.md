@@ -61,7 +61,7 @@ Saafree OS is live on G2 production infrastructure. EEOS is not a concept — it
 
 ## About Saafree
 
-Saafree Inc. — Ho Chi Minh City, Vietnam  
+Saafree Inc.  
 Building the first production EEOS for the AI Agent era.
 
 → [saafree.com](https://saafree.com)  
