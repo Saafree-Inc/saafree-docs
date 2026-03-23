@@ -1,3 +1,15 @@
+---
+version: "1.0"
+date: 2026-03
+status: canonical
+category: EEOS
+owner: Saafree Inc.
+changelog:
+  - version: "1.0"
+    date: 2026-03
+    note: "Initial public release — EEOS definition, evolution loop, ESDELE framework, 4-plane architecture, maturity model"
+---
+
 # EEOS Category Whitepaper
 ## Enterprise Evolution Operating System
 ### Defined by Saafree OS
