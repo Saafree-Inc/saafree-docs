@@ -6,6 +6,11 @@ status: live
 evidence: G2 production deployment
 ---
 
+> **Erratum — historical record (added 2026-09-27)**
+>
+> This milestone note records statements made in March 2026. Its production-status and "all planes live" statements are **not a current verified statement** of Saafree EEOS capability, and they are not evidence of a complete governed business operation running in production. Saafree's evidence discipline and certified capability state have since evolved. The original text is retained below, unchanged, as a historical record.
+
+
 # EEOS v1.0 — Production Runtime Live
 
 **Date:** March 2026  

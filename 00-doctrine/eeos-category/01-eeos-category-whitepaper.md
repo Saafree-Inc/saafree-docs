@@ -10,6 +10,11 @@ changelog:
     note: "Initial public release — EEOS definition, evolution loop, ESDELE framework, 4-plane architecture, maturity model"
 ---
 
+> **Erratum — historical version (added 2026-09-27)**
+>
+> This is the March 2026 public version (v1.0) of the EEOS Category Whitepaper, retained unchanged for historical continuity. It is not the current authoritative statement of the EEOS category; a successor will be identified in this repository when it is published. In particular, §11 "Evolution Proof" describes outcomes that were not supported by witnessed evidence and is not a current claim. "Saafree OS" is a former name; the current system name is Saafree EEOS.
+
+
 # EEOS Category Whitepaper
 ## Enterprise Evolution Operating System
 ### Defined by Saafree OS

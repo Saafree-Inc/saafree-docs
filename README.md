@@ -1,5 +1,15 @@
 # Saafree Open Docs
 
+> **Status notice — historical snapshot (added 2026-09-27)**
+>
+> This repository is a historical public snapshot of Saafree documentation published in March 2026, at an earlier stage of Saafree EEOS. Earlier Saafree publications documented the state and claims of the project at that time. Saafree's architecture, evidence discipline, terminology and certified capability state have since evolved.
+>
+> Several statements in this snapshot — including production-status, capability, maturity and "first" claims — predate Saafree's current evidence and claim discipline and are **not current verified statements**. The materials are retained for historical continuity; they should not be read as the current authoritative description, capability statement or maturity statement of Saafree EEOS. Current authoritative public material will be identified here when it is published.
+>
+> Terminology: "Saafree OS" is a former name. The current system name is Saafree EEOS.
+
+---
+
 **EEOS — Enterprise Evolution Operating System**
 
 Saafree OS is an EEOS: an operating system that enables enterprises to evolve continuously through strategic decision, execution, and controlled adaptation.
@@ -52,6 +62,8 @@ All enterprise activity runs inside a constitutional governance field. Strategy,
 
 ## Production Runtime
 
+> **Erratum (2026-09-27):** This section records statements made in March 2026. It is not a current verified statement of production capability or of a fully operational governed runtime. The original text is retained below as historical text.
+
 Saafree OS is live on G2 production infrastructure. EEOS is not a concept — it is a running operating system.
 
 **EEOS v1.0 — Production Runtime Live** | March 2026  
@@ -60,6 +72,8 @@ Saafree OS is live on G2 production infrastructure. EEOS is not a concept — it
 ---
 
 ## About Saafree
+
+> **Erratum (2026-09-27):** "The first production EEOS" was a March 2026 statement. Saafree does not currently make a first-in-world or production-maturity claim. The original text is retained below as historical text.
 
 Saafree Inc.  
 Building the first production EEOS for the AI Agent era.
